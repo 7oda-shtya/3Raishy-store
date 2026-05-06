@@ -10,9 +10,12 @@ const Cart = () => {
 	const [coupon, setCoupon] = useState('');
 	const [discount, setDiscount] = useState(0);
 
+	const cartItemsLength = cart.cartItems.length;
+	const cartQtyKey = cart.cartItems.map(i => i.qty).join(',');
+
 	useEffect(() => {
 		dispatch(calculateTotals());
-	}, [cart.cartItems.length, cart.cartItems.map(i => i.qty).join(','), dispatch]);
+	}, [cartItemsLength, cartQtyKey, dispatch]);
 
 	const applyCoupon = () => {
 		if (coupon.trim().toLowerCase() === 'save10') setDiscount(0.1);

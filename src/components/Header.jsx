@@ -57,8 +57,8 @@ const Header = () => {
 	return (
 		<>
 			<div className={`text-white fixed left-0 top-0 z-[100] w-full border-b border-white/10 bg-black/80 backdrop-blur-sm transition-all duration-300 ${isShrunk ? 'shadow-lg' : ''}`}>
-				<div className={`mx-auto flex max-w-7xl flex-col gap-3 px-4 transition-all duration-300 lg:flex-row lg:items-center lg:justify-between ${isShrunk ? 'py-1 lg:py-1' : 'py-3 lg:py-3'}`}>
-					<div className="flex items-center justify-between gap-4">
+				<div className={`mx-auto flex max-w-7xl flex-col gap-3 px-4 transition-all duration-300 lg:flex-row lg:items-center lg:justify-between py-4`}>
+					<div className={`flex items-center justify-between gap-4 ${isShrunk ? 'hidden' : 'opacity-100'}`}>
 						<img className={`w-32 cursor-pointer object-contain transition-all duration-300 ${isShrunk ? 'h-9' : 'h-12'}`} src="/images/logo.png" alt="Logo" onClick={() => navigate('/')} />
 						<div className={`flex gap-3 text-xl lg:hidden ${isShrunk ? 'scale-90' : 'scale-100'} origin-right transition-transform duration-300`}>
 							<button onClick={() => navigate('/liked')} className="transition-colors hover:text-red-500" title="Liked Items">
@@ -170,18 +170,18 @@ const Header = () => {
 								</button>
 								<div className="absolute left-0 top-8 hidden overflow-hidden rounded-md bg-black/95 p-3 shadow-lg group-hover:block lg:left-1/2 lg:-translate-x-1/2">
 									<div className="flex gap-4">
-										<a href="#" className="rounded-full p-1  text-lg transition-colors hover:bg-blue-500 hover:text-white">
+										<button type="button" aria-label="Facebook" className="rounded-full p-1 text-lg transition-colors hover:bg-blue-500 hover:text-white">
 											<FontAwesomeIcon icon={faFacebook} />
-										</a>
-										<a href="#" className="rounded-full p-1  text-lg transition-colors hover:bg-green-400 hover:text-white">
+										</button>
+										<button type="button" aria-label="WhatsApp" className="rounded-full p-1 text-lg transition-colors hover:bg-green-400 hover:text-white">
 											<FontAwesomeIcon icon={faWhatsapp} />
-										</a>
-										<a href="#" className="rounded-full p-1 text-lg transition-colors hover:bg-purple-700 hover:text-white">
+										</button>
+										<button type="button" aria-label="Instagram" className="rounded-full p-1 text-lg transition-colors hover:bg-purple-700 hover:text-white">
 											<FontAwesomeIcon icon={faInstagram} />
-										</a>
-										<a href="#" className="rounded-full p-1 text-lg transition-colors hover:bg-blue-700 hover:text-white">
+										</button>
+										<button type="button" aria-label="LinkedIn" className="rounded-full p-1 text-lg transition-colors hover:bg-blue-700 hover:text-white">
 											<FontAwesomeIcon icon={faLinkedin} />
-										</a>
+										</button>
 									</div>
 								</div>
 							</div>

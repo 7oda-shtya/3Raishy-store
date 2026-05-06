@@ -67,18 +67,18 @@ const Footer = () => {
 					<div>
 						<h3 className="mb-4 text-lg font-bold text-red-500">Follow Us</h3>
 						<div className="flex gap-4">
-							<a href="#" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-500 hover:text-white">
+							<button type="button" aria-label="Facebook" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-500 hover:text-white">
 								<FontAwesomeIcon icon={faFacebook} />
-							</a>
-							<a href="#" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-300 hover:text-white">
+							</button>
+							<button type="button" aria-label="Twitter" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-300 hover:text-white">
 								<FontAwesomeIcon icon={faTwitter} />
-							</a>
-							<a href="#" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-purple-700 hover:text-white">
+							</button>
+							<button type="button" aria-label="Instagram" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-purple-700 hover:text-white">
 								<FontAwesomeIcon icon={faInstagram} />
-							</a>
-							<a href="#" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-700 hover:text-white">
+							</button>
+							<button type="button" aria-label="LinkedIn" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-700 hover:text-white">
 								<FontAwesomeIcon icon={faLinkedin} />
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -87,18 +87,18 @@ const Footer = () => {
 				<div className="mt-8 border-t border-white/10 pt-8 text-center text-sm text-gray-400">
 					<p className="mb-2">&copy; 2026 3Raishy Store. All rights reserved.</p>
 					<div className="flex justify-center gap-6">
-						<a href="#" className="transition-colors hover:text-white">
+						<button type="button" className="transition-colors hover:text-white">
 							Privacy Policy
-						</a>
-						<a href="#" className="transition-colors hover:text-white">
+						</button>
+						<button type="button" className="transition-colors hover:text-white">
 							Terms & Conditions
-						</a>
-						<a href="#" className="transition-colors hover:text-white">
+						</button>
+						<button type="button" className="transition-colors hover:text-white">
 							Shipping Info
-						</a>
-						<a href="#" className="transition-colors hover:text-white">
+						</button>
+						<button type="button" className="transition-colors hover:text-white">
 							Returns
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
