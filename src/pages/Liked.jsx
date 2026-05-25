@@ -19,7 +19,7 @@ const Liked = () => {
 		<div className="min-h-screen flex flex-col">
 			<div>
 				<h1 className="flex h-[130px] w-full cursor-default items-center justify-center bg-white/20 text-4xl text-red-700">Liked Products</h1>
-				<div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+				<div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 					{likedProducts.length > 0 ? (
 						likedProducts.map((product) => (
 							<ProductCard key={product.id} product={product} />

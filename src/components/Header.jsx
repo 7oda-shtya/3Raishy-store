@@ -59,7 +59,7 @@ const Header = () => {
 			<div className={`text-white fixed left-0 top-0 z-[100] w-full border-b border-white/10 bg-black/80 backdrop-blur-sm transition-all duration-300 ${isShrunk ? 'shadow-lg' : ''}`}>
 				<div className={`mx-auto flex max-w-7xl flex-col gap-3 px-4 transition-all duration-300 lg:flex-row lg:items-center lg:justify-between py-4`}>
 					<div className={`flex items-center justify-between gap-4 ${isShrunk ? 'hidden' : 'opacity-100'}`}>
-						<img className={`w-32 cursor-pointer object-contain transition-all duration-300 ${isShrunk ? 'h-9' : 'h-12'}`} src="/images/logo.png" alt="Logo" onClick={() => navigate('/')} />
+						<img className={`w-32 cursor-pointer object-contain transition-all duration-300 ${isShrunk ? 'h-12' : 'h-20'}`} src="/images/logo.png" alt="Logo" onClick={() => navigate('/')} />
 						<div className={`flex gap-3 text-xl lg:hidden ${isShrunk ? 'scale-90' : 'scale-100'} origin-right transition-transform duration-300`}>
 							<button onClick={() => navigate('/liked')} className="transition-colors hover:text-red-500" title="Liked Items">
 								<FontAwesomeIcon icon={faHeart} />

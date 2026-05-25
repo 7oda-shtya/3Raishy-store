@@ -7,7 +7,7 @@ const Login = () => {
 	return (
 		<div className="absolute inset-0 h-[69%] flex flex-col justify-center items-center bg-white/20 text-white px-4 py-4 max-w-md m-auto rounded-lg">
 			<div className="w-full text-black flex justify-between items-center ">
-				<button className="rounded-full transtion-all duration-300 hover:bg-white/90 bg-white/30 w-12 h-12 flex justify-center items-center" onClick={() => navigate('/account')}>
+				<button className="rounded-full transtion-all duration-300 hover:bg-white/90 bg-white/30 w-12 h-12 flex justify-center items-center" onClick={() => navigate(-1)}>
 					<FontAwesomeIcon icon={faArrowLeft} />
 				</button>
 				<button className="rounded-full transtion-all duration-300 hover:bg-white/90 bg-white/30 w-12 h-12 flex justify-center items-center" onClick={() => navigate('/account/help')}>

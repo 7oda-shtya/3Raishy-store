@@ -67,16 +67,16 @@ const Footer = () => {
 					<div>
 						<h3 className="mb-4 text-lg font-bold text-red-500">Follow Us</h3>
 						<div className="flex gap-4">
-							<button type="button" aria-label="Facebook" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-500 hover:text-white">
+							<button type="button" aria-label="Facebook" className="rounded-full p-2 w-12 h-12 text-lg transition-colors hover:bg-blue-500 hover:text-white">
 								<FontAwesomeIcon icon={faFacebook} />
 							</button>
-							<button type="button" aria-label="Twitter" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-300 hover:text-white">
+							<button type="button" aria-label="Twitter" className="rounded-full p-2 w-12 h-12 text-lg transition-colors hover:bg-blue-300 hover:text-white">
 								<FontAwesomeIcon icon={faTwitter} />
 							</button>
-							<button type="button" aria-label="Instagram" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-purple-700 hover:text-white">
+							<button type="button" aria-label="Instagram" className="rounded-full p-2 w-12 h-12 text-lg transition-colors hover:bg-purple-700 hover:text-white">
 								<FontAwesomeIcon icon={faInstagram} />
 							</button>
-							<button type="button" aria-label="LinkedIn" className="rounded-full bg-white/10 p-3 text-lg transition-colors hover:bg-blue-700 hover:text-white">
+							<button type="button" aria-label="LinkedIn" className="rounded-full p-2 w-12 h-12 text-lg transition-colors hover:bg-blue-700 hover:text-white">
 								<FontAwesomeIcon icon={faLinkedin} />
 							</button>
 						</div>
